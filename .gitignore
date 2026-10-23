@@ -5,3 +5,4 @@ data/filings/
 data/chunks/
 .pytest_cache/
 data/index/
+.env
