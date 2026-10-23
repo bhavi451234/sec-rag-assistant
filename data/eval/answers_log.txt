@@ -1,0 +1,166 @@
+Q1: What was Apple's total net sales in fiscal 2025?
+Apple's total net sales in fiscal 2025 was $416,161 million [1][2][3].
+  [1] AAPL Item 7 (score 0.80)
+  [2] AAPL Item 7 (score 0.78)
+  [3] AAPL Item 8 (score 0.78)
+  [4] AAPL Item 8 (score 0.75)
+  [5] AAPL Item 8 (score 0.74)
+  [6] AAPL Item 5 (score 0.73)
+  [7] AAPL Item 7 (score 0.70)
+  [8] AAPL Item 7 (score 0.69)
+
+Q2: What are the main risk factors for Tesla?
+The main risk factors for Tesla identified in the provided filings include:
+
+1. EV Demand and Adoption: Tesla's future growth depends on demand for electric vehicles and adoption of autonomous driving solutions. Market growth could be slowed or demand decreased by perceptions of vehicle features, quality, safety, performance, cost, limited driving range, access to charging facilities, competition, volatility in oil and energy costs, government regulations, and concerns about Tesla's viability [1].
+
+2. Government and Economic Incentives: Reductions, eliminations, repeals, or restrictions of tax exemptions, tax credits, rebates, carbon offset mechanisms, and regulatory credit programs supporting electric vehicles can negatively impact vehicle demand, sales, growth, and operating results [2].
+
+3. Product Development and Production Ramping: Tesla may encounter issues or delays in developing, launching, and scaling production of new technologies, products, services, and features, or may fail to control manufacturing costs or achieve widespread consumer adoption [3].
+
+4. Service Capabilities and Charging Infrastructure: Delays in expanding servicing capacity, unforeseen vehicle reliability issues (especially with higher-volume additions like Model 3 and Model Y), the need to rapidly increase Supercharger stations and connectors, and accurately forecasting service needs for Robotaxi and Semi expansion could overburden servicing capabilities and parts inventory [4].
+
+5. Warranty Reserves and Guarantees: Warranty reserves may be insufficient to cover claims on vehicles and energy generation and storage systems, including potential shortfalls under availability or performance guarantees or failures of third-party components [5].
+
+6. Component and Gigafactory Operations: Production and profitability rely on lithium-ion cell production and component manufacturing at Gigafactories. Issues maintaining operations cost-effectively, hiring/retaining skilled personnel, or safety incidents and fires from handling, storing, and recycling high volumes of cells and battery modules could disrupt operations [6].
+
+7. Credibility, Reputation, and Public Perception: Tesla must maintain public credibility and confidence. Brand image, sales, and fundraising could be harmed by third-party criticism, commentary, speculation about management stability, or protests targeting Tesla's operations, products, and personnel [8].
+  [1] TSLA Item 1A (score 0.75)
+  [2] TSLA Item 1A (score 0.70)
+  [3] TSLA Item 1A (score 0.68)
+  [4] TSLA Item 1A (score 0.67)
+  [5] TSLA Item 1A (score 0.67)
+  [6] TSLA Item 1A (score 0.67)
+  [7] TSLA Item 8 (score 0.67)
+  [8] TSLA Item 1A (score 0.67)
+
+Q3: What legal proceedings is Snap involved in?
+Based on the provided filings, Snap is involved in or subject to the following legal proceedings:
+
+1. Platform-Related Matters (Addiction and Mental Health Harms):
+Beginning on January 20, 2022, Snap was named as a defendant in various federal and state courts alleging that the design and use of its platform is addictive and harmful to users, with most cases focused on mental health harms and users under 18 years old [1]. The majority of cases are consolidated in a federal Multi-District Litigation (MDL) in the U.S. District Court for the Northern District of California or a California Judicial Council Coordinated Proceeding (JCCP) in Los Angeles County Superior Court [1]. Snap reached a confidential settlement agreement resolving the first JCCP bellwether trial for Snap, and the next JCCP bellwether trial including Snap is scheduled to begin in March 2026 [1]. A putative class action asserting similar allegations was also filed in Canada and Israel [1].
+
+2. Sexual Exploitation Lawsuits:
+On July 24, 2025, a lawsuit was filed against Roblox and Snap alleging that a minor met a stranger on Roblox and became a victim of sexual exploitation occurring on both Roblox and Snapchat [3]. Similar lawsuits were filed by additional families [3]. In December 2025, a federal MDL proceeding was formed to coordinate similar cases in federal court, while separate cases are proceeding in state court [3].
+
+3. Fentanyl Overdose Lawsuits:
+On October 13, 2022, Snap was named as a defendant in a lawsuit in Los Angeles Superior Court alleging it should be responsible for the deaths of young people who died from fatal doses of fentanyl after allegedly communicating on Snapchat with drug dealers [4]. Other similar lawsuits were coordinated with this case [4]. On January 2, 2024, the judge granted in part and overruled in part Snap's demurrer, allowing several claims to proceed [4].
+
+4. Securities-Related Matters:
+On November 11, 2021, Snap and certain officers were named as defendants in a federal securities class action lawsuit in the U.S. District Court for the Central District of California [7]. The lawsuit alleges false or misleading statements and omissions concerning the impact of Apple's App Tracking Transparency framework on Snap's business [7]. Snap recently settled this case, subject to court approval [7].
+
+5. FTC Referred Complaint (My AI):
+On January 16, 2025, the U.S. Federal Trade Commission referred a complaint against Snap to the Department of Justice regarding the deployment of its My AI feature and allegedly resulting risks of harm to young users [4]. The DOJ did not act within the statutory timeframe, returning the complaint to the FTC's jurisdiction, and the FTC has taken no further action [4].
+
+6. Class Action Lawsuit (Special Dividend):
+In February 2024, the settlement of a class action lawsuit became effective, which modified certain triggering conditions for a special dividend of Class A common stock [6].
+  [1] SNAP Item 3 (score 0.74)
+  [2] SNAP Item 1A (score 0.74)
+  [3] SNAP Item 3 (score 0.73)
+  [4] SNAP Item 3 (score 0.72)
+  [5] SNAP Item 8 (score 0.66)
+  [6] SNAP Item 1A (score 0.66)
+  [7] SNAP Item 3 (score 0.65)
+  [8] SNAP Item 13 (score 0.65)
+
+Q4: Compare how Microsoft and Apple describe their competition.
+Microsoft states that it derives substantial revenue from Windows operating system licenses on PCs and faces significant competition from competing platforms developed for new types of devices like smartphones and tablets, which compete on price and perceived utility [1]. Windows also faces competition from various software products, alternative platforms, and devices [2]. Microsoft Defender for Endpoint competes with endpoint security solution providers, and Enterprise Mobility + Security offerings compete with identity vendors, security solution vendors, and other security point solution vendors [2]. LinkedIn competes with online professional networks, recruiting and HR services companies, job boards, learning and development companies, and advertisers/marketers [2]. Dynamics competes with cloud-based and on-premises business solution providers [2]. Microsoft also notes that competitors offer content and application marketplaces with scale and installed bases [3], and that competitors range from diversified global companies with significant research and development resources to small, specialized firms [4]. Companies compete with Microsoft based on a growing variety of business models [3] and platform-based ecosystems [4].
+
+Apple describes its products and services as facing substantial competition from companies that possess significant technical, marketing, distribution, and other resources, as well as established hardware, software, and service offerings with large customer bases [5][6]. Apple faces significant competition as competitors imitate its product features, applications, and approach to providing components seamlessly within their offerings or work collaboratively to offer integrated solutions [5][6]. Apple notes that some competitors have broad product lines, low-priced products, large installed bases of active devices, and large customer bases, and that competition is intense due to competitors aggressively cutting prices, lowering product margins, or having resources, experience, or cost structures to provide products and services at little or no profit or even at a loss [5][6]. Furthermore, Apple states that it has a minority market share in the global smartphone, personal computer, tablet, and wearables markets [5][6].
+  [1] MSFT Item 1A (score 0.70)
+  [2] MSFT Item 1 (score 0.68)
+  [3] MSFT Item 1A (score 0.68)
+  [4] MSFT Item 1A (score 0.68)
+  [5] AAPL Item 1 (score 0.70)
+  [6] AAPL Item 1A (score 0.68)
+  [7] AAPL Item 1 (score 0.64)
+  [8] AAPL Item 1A (score 0.64)
+
+Q5: Which companies mention climate change as a risk?
+Based on the provided filings, the companies that mention climate change as a risk are:
+
+Apple Inc. (AAPL) [1]
+Microsoft Corporation (MSFT) [3]
+Tesla, Inc. (TSLA) [5]
+Snap Inc. (SNAP) [7]
+JPMorgan Chase & Co. (JPM) [9][10]
+Exxon Mobil Corporation (XOM) [12]
+Johnson & Johnson (JNJ) [13]
+  [1] AAPL Item 1A (score 0.75)
+  [2] AAPL Item 1A (score 0.67)
+  [3] MSFT Item 1A (score 0.65)
+  [4] MSFT Item 1A (score 0.64)
+  [5] TSLA Item 1A (score 0.67)
+  [6] TSLA Item 1A (score 0.63)
+  [7] SNAP Item 16 (score 0.67)
+  [8] SNAP Item 16 (score 0.63)
+  [9] JPM Other (score 0.77)
+  [10] JPM Item 1A (score 0.72)
+  [11] XOM Other (score 0.68)
+  [12] XOM Item 1A (score 0.68)
+  [13] JNJ Item 1A (score 0.74)
+  [14] JNJ Item 1A (score 0.74)
+
+Q6: How much did Exxon spend on capital expenditures in 2025?
+Exxon spent $3,053 million on capital expenditures in 2025 [2].
+  [1] XOM Other (score 0.80)
+  [2] XOM Other (score 0.78)
+  [3] XOM Item 16 (score 0.74)
+  [4] XOM Other (score 0.74)
+  [5] XOM Other (score 0.73)
+  [6] XOM Other (score 0.72)
+  [7] XOM Other (score 0.72)
+  [8] XOM Other (score 0.72)
+
+Q7: What is Tesla's stock price today?
+I can't find this in the provided filings.
+  [1] TSLA Item 8 (score 0.74)
+  [2] TSLA Item 8 (score 0.74)
+  [3] TSLA Item 15 (score 0.73)
+  [4] TSLA Item 8 (score 0.72)
+  [5] TSLA Item 5 (score 0.72)
+  [6] TSLA Other (score 0.72)
+  [7] TSLA Other (score 0.71)
+  [8] TSLA Item 8 (score 0.70)
+
+Q8: How does JPMorgan describe its liquidity risk?
+Liquidity risk is defined by JPMorgan as the risk that the Firm will be unable to meet its cash and collateral needs as they arise or that it does not have the appropriate amount, composition and tenor of funding and liquidity to support its assets and liabilities [7]. 
+
+Additionally, JPMorgan describes liquidity risks as including the risk that its ability to operate could be impaired by constrained liquidity; the dependence of JPMorgan Chase & Co. on its subsidiaries for funding; and the potential adverse effects that any downgrades of JPMorganChase’s credit ratings could have on its liquidity and cost of funding [4].
+  [1] JPM Other (score 0.80)
+  [2] JPM Item 1A (score 0.80)
+  [3] JPM Item 1A (score 0.79)
+  [4] JPM Item 1A (score 0.78)
+  [5] JPM Other (score 0.78)
+  [6] JPM Item 1A (score 0.78)
+  [7] JPM Other (score 0.78)
+  [8] JPM Item 1A (score 0.78)
+
+Q9: What does Johnson & Johnson say about talc litigation?
+Johnson and Johnson states that a significant number of personal injury claims alleging that talc causes cancer have been asserted against the company and its affiliates arising out of the use of body powders containing talc, primarily JOHNSON’S Baby Powder [2][4][5]. 
+
+In talc cases that have gone to trial, the company has obtained a number of defense verdicts, but there also have been verdicts against the company, many of which have been reversed on appeal [2]. In June 2020, the Missouri Court of Appeals reversed in part and affirmed in part a July 2018 verdict of $4.7 billion in Ingham v. Johnson & Johnson, reducing the overall award to $2.1 billion [2]. After a petition for certiorari seeking review by the United States Supreme Court was denied, the company paid the award in June 2021, which totaled approximately $2.5 billion including interest [2]. 
+
+To expeditiously resolve litigation for the overwhelming majority of claimants, Johnson & Johnson Consumer Inc. (Old JJCI) implemented a corporate restructuring in October 2021 through which Old JJCI ceased to exist and created three new entities, including LTL Management LLC, which became solely responsible for the talc-related liabilities [3]. LTL filed voluntary petitions for Bankruptcy pursuant to Chapter 11 in October 2021 and April 2023, and both petitions were dismissed [3]. 
+
+The company records accruals for loss contingencies associated with legal matters, including talc, when it is probable that a liability will be incurred and the amount of the loss can be reasonably estimated [4]. As of December 28, 2025, the total present value of the reserve to resolve the talc claims is approximately $3.4 billion, comprising previously executed settlement agreements, litigation defense, and other costs [4].
+  [1] JNJ Item 1A (score 0.78)
+  [2] JNJ Item 8 (score 0.78)
+  [3] JNJ Item 8 (score 0.76)
+  [4] JNJ Item 8 (score 0.73)
+  [5] JNJ Item 8 (score 0.71)
+  [6] JNJ Item 8 (score 0.69)
+  [7] JNJ Item 8 (score 0.69)
+  [8] JNJ Item 8 (score 0.69)
+
+Q10: What was Microsoft's revenue growth in fiscal 2026?
+In fiscal year 2026, Microsoft's total revenue increased by 18%, or $50.1 billion, to $331,839 million (compared to $281,724 million in fiscal year 2025) [2][4].
+  [1] MSFT Item 7 (score 0.78)
+  [2] MSFT Item 7 (score 0.75)
+  [3] MSFT Item 8 (score 0.71)
+  [4] MSFT Item 7 (score 0.71)
+  [5] MSFT Item 8 (score 0.71)
+  [6] MSFT Item 7 (score 0.70)
+  [7] MSFT Item 7 (score 0.69)
+  [8] MSFT Item 7 (score 0.68)
+
