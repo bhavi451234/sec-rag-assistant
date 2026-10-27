@@ -1,0 +1,27 @@
+[1] XOM_2025-12-31_0204 score 0.80
+
+[2] XOM_2025-12-31_0203 score 0.78
+   contains 3,053:
+es of $29.9 billion in 2024 decreased $2.3 billion from 2023.
+MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+ENVIRONMENTAL MATTERS
+Environmental Expenditures
+(millions of dollars) 2025 2024
+Capital expenditures 3,053 3,607
+Other expenditures 4,580 5,348
+Total 7,633 8,955
+
+[3] XOM_2025-12-31_0126 score 0.74
+
+[4] XOM_2025-12-31_0193 score 0.74
+   contains Capex in 2025 was:
+The Corporation’s financial strength enables it to make large, long-term capital expenditures. Cash Capex in 2025 was $29.0 billion, including $2.6 billion of acquisitions, reflecting the Corporation’s continued active investment program.
+Upstream spending of $24.7 billion in 2025 was up $4.4 billion from 2024, reflecting higher spend in the U.S. P
+
+[5] XOM_2025-12-31_0296 score 0.73
+
+[6] XOM_2025-12-31_0317 score 0.72
+
+[7] XOM_2025-12-31_0303 score 0.72
+
+[8] XOM_2025-12-31_0189 score 0.72

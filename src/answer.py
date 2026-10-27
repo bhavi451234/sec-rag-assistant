@@ -6,7 +6,7 @@ import time
 import numpy as np
 from dotenv import load_dotenv
 from google import genai
-from google.genai import errors
+from google.genai import errors, types
 from sentence_transformers import SentenceTransformer
 
 from src.search import CHUNKS_PATH, MODEL_NAME, VECTORS_PATH, build_index, load_chunks, search
@@ -16,6 +16,7 @@ load_dotenv()
 LLM_MODELS = ["gemini-3.6-flash", "gemini-3.5-flash-lite"]
 RETRIES = 3
 RETRY_CODES = (429, 500, 503)
+GENERATION_CONFIG = types.GenerateContentConfig(temperature=0)
 
 COMPANY_ALIASES = {
     "AAPL": ["apple", "aapl"],
@@ -31,8 +32,9 @@ INSTRUCTIONS = """You are a careful financial research assistant.
 Answer the question using ONLY the numbered sources below, which are excerpts from SEC 10-K filings.
 Cite the sources you use like [1] or [2][3] right after each claim.
 If the sources do not contain the answer, say "I can't find this in the provided filings." and do not guess.
-Give exact figures as written in the sources. Write plain text without markdown formatting."""
-
+Give exact figures as written in the sources. Write plain text without markdown formatting.
+If the question names a company and a measure without any qualifier, answer with the company-wide total for that measure, not a figure for one segment, region or type of expense.
+You may mention a narrower figure afterwards, but only if you label it clearly."""
 
 def detect_tickers(question: str) -> list[str]:
     """Return the tickers of the companies named in the question, in the order they appear."""
@@ -68,7 +70,9 @@ def ask_llm(prompt: str) -> str:
     for llm_model in LLM_MODELS:
         for attempt in range(RETRIES):
             try:
-                response = client.models.generate_content(model=llm_model, contents=prompt)
+                response = client.models.generate_content(
+                      model=llm_model, contents=prompt, config=GENERATION_CONFIG
+                )
                 return response.text
             except errors.APIError as error:
                 if error.code not in RETRY_CODES:

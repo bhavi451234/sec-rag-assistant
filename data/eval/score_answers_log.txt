@@ -1,0 +1,44 @@
+aapl_net_sales run 1  PASS  (ok)
+Apple's total net sales in fiscal 2025 were $416,161 million [1][2][3][5].
+
+aapl_net_sales run 2  PASS  (ok)
+Apple's total net sales in fiscal 2025 were $416,161 million [1][2][3][5].
+
+aapl_net_sales run 3  PASS  (ok)
+Apple's total net sales in fiscal 2025 were $416,161 million [1][2][3][5].
+
+msft_revenue run 1  PASS  (ok)
+Microsoft's total revenue in fiscal 2026 was $331,839 million (or $331.839 billion) [2][3][5].
+
+msft_revenue run 2  PASS  (ok)
+Microsoft's total revenue in fiscal 2026 was $331,839 million (or $331,839,000,000) [2][3].
+
+msft_revenue run 3  PASS  (ok)
+Microsoft's total revenue in fiscal 2026 was $331,839 million (or $331.839 billion) [2][3].
+
+jnj_talc_reserve run 1  PASS  (ok)
+As of December 28, 2025, the total present value of the reserve to resolve the talc claims is approximately $3.4 billion [1][3].
+
+jnj_talc_reserve run 2  PASS  (ok)
+As of December 28, 2025, the total present value of the reserve to resolve the talc claims is approximately $3.4 billion [1][3].
+
+jnj_talc_reserve run 3  PASS  (ok)
+As of December 28, 2025, the total present value of the reserve to resolve the talc claims is approximately $3.4 billion [1][3].
+
+xom_capex run 1  PASS  (ok)
+Exxon spent $29.0 billion on Cash Capex in 2025, which includes $2.6 billion of acquisitions [4]. Additionally, worldwide environmental capital expenditures for preventative and remediation steps were $3.053 billion in 2025 (or approximately $3.4 billion of the total $7.633 billion environmental expenditures, as capital expenditures accounted for the remainder alongside $4.580 billion in other expenditures) [1][2].
+
+xom_capex run 2  PASS  (ok)
+Exxon's Cash Capex in 2025 was $29.0 billion, which includes $2.6 billion of acquisitions [4].
+
+xom_capex run 3  PASS  (ok)
+In 2025, ExxonMobil's Cash Capex was $29.0 billion, which includes $2.6 billion of acquisitions [4]. Worldwide environmental capital expenditures were $3.053 billion in 2025 (with total worldwide environmental expenditures being $7.633 billion) [1][2]. Additionally, capital investments in the three Product Solutions businesses totaled $3.7 billion, and Upstream spending was $24.7 billion [4].
+
+tsla_price run 1  PASS  (ok)
+I can't find this in the provided filings.
+
+tsla_price run 2  PASS  (ok)
+I can't find this in the provided filings.
+
+tsla_price run 3  PASS  (ok)
+I can't find this in the provided filings.
