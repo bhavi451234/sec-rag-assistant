@@ -63,7 +63,6 @@ def build_prompt(question: str, results: list[dict]) -> str:
     """Instructions + numbered sources + the question, as one prompt string."""
     return f"{INSTRUCTIONS}\n\nSOURCES:\n{format_sources(results)}\n\nQUESTION: {question}\n\nANSWER:"
 
-
 def ask_llm(prompt: str) -> str:
     """Send the prompt to Gemini. If it is busy, wait and retry, then try the next model."""
     client = genai.Client()
@@ -71,12 +70,15 @@ def ask_llm(prompt: str) -> str:
         for attempt in range(RETRIES):
             try:
                 response = client.models.generate_content(
-                      model=llm_model, contents=prompt, config=GENERATION_CONFIG
+                    model=llm_model, contents=prompt, config=GENERATION_CONFIG
                 )
+                if llm_model != LLM_MODELS[0]:
+                    print(f"  [answered by fallback model {llm_model}]")
                 return response.text
             except errors.APIError as error:
                 if error.code not in RETRY_CODES:
                     raise
+                print(f"  [{llm_model}: error {error.code}, retry {attempt + 1}]")
                 time.sleep(5 * (attempt + 1))
     raise RuntimeError("All Gemini models are busy right now. Please try again in a minute.")
 
