@@ -13,7 +13,7 @@ from src.search import CHUNKS_PATH, MODEL_NAME, VECTORS_PATH, build_index, load_
 
 load_dotenv()
 
-LLM_MODELS = ["gemini-3.6-flash", "gemini-3.5-flash-lite"]
+LLM_MODELS = ["gemini-3.5-flash-lite", "gemini-3.6-flash"]
 RETRIES = 3
 RETRY_CODES = (429, 500, 503)
 GENERATION_CONFIG = types.GenerateContentConfig(temperature=0)
@@ -33,9 +33,8 @@ Answer the question using ONLY the numbered sources below, which are excerpts fr
 Cite the sources you use like [1] or [2][3] right after each claim.
 If the sources do not contain the answer, say "I can't find this in the provided filings." and do not guess.
 Give exact figures as written in the sources. Write plain text without markdown formatting.
-If the question names a company and a measure without any qualifier, answer with the company-wide total for that measure, not a figure for one segment, region or type of expense.
+If the question asks for a financial amount of a company without naming a segment, region or type of expense, give the company-wide total, not a figure for one segment, region or type of expense. Only apply this to questions about amounts. Answer all other questions normally.
 You may mention a narrower figure afterwards, but only if you label it clearly."""
-
 def detect_tickers(question: str) -> list[str]:
     """Return the tickers of the companies named in the question, in the order they appear."""
     text = question.lower()
@@ -78,10 +77,12 @@ def ask_llm(prompt: str) -> str:
             except errors.APIError as error:
                 if error.code not in RETRY_CODES:
                     raise
+                if error.code == 429 and "PerDay" in str(error):
+                    print(f"  [{llm_model}: daily quota used up, skipping to the next model]")
+                    break
                 print(f"  [{llm_model}: error {error.code}, retry {attempt + 1}]")
                 time.sleep(5 * (attempt + 1))
     raise RuntimeError("All Gemini models are busy right now. Please try again in a minute.")
-
 
 def retrieve(
     question: str, embedder: SentenceTransformer, index, chunks: list[dict], k: int = 8
