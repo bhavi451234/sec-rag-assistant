@@ -8,11 +8,22 @@ from src.check_eval_set import load_eval
 from src.search import CHUNKS_PATH, MODEL_NAME, VECTORS_PATH, build_index, load_chunks
 
 def hit_rank(entry, results):
-    """Return the 1-based position of the first chunk containing the evidence, or None."""
-    for position, result in enumerate(results, start=1):
-        if entry["evidence"] in result["text"]:
-            return position
-    return None
+    """Return the worst per-company position of the evidence, or None if any company's evidence is missing."""
+    evidence = entry["evidence"]
+    if isinstance(evidence, str):
+        evidence = {entry["ticker"]: evidence}
+
+    worst = 0
+    for ticker, phrase in evidence.items():
+        company_results = [r for r in results if r["ticker"] == ticker]
+        rank = next(
+            (position for position, r in enumerate(company_results, start=1) if phrase in r["text"]),
+            None,
+        )
+        if rank is None:
+            return None
+        worst = max(worst, rank)
+    return worst
 
 def main():
     embedder = SentenceTransformer(MODEL_NAME)

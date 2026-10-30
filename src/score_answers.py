@@ -15,19 +15,27 @@ LOG_PATH = Path("data/eval/score_answers_log.txt")
 RUNS = 3
 
 def judge(entry, answer_text):
-    """Return (passed, reason) for one answer, using the answer key in the entry."""
     text = answer_text.lower()
     if entry["type"] == "unanswerable":
         if CANT_FIND in text:
             return True, "ok"
         return False, "should have said it can't find this"
 
-    position = text.find(entry["expected"].lower())
-    if position == -1:
-        return False, f"missing expected {entry['expected']!r}"
+    expected_values = entry["expected"]
+    if isinstance(expected_values, str):
+        expected_values = [expected_values]
+
+    positions = []
+    for expected in expected_values:
+        position = text.find(expected.lower())
+        if position == -1:
+            return False, f"missing expected {expected!r}"
+        positions.append(position)
+
+    first_position = min(positions)
     for bad in entry["must_not_contain"]:
         bad_position = text.find(bad.lower())
-        if bad_position != -1 and bad_position < position:
+        if bad_position != -1 and bad_position < first_position:
             return False, f"wrong value {bad!r} comes before the expected one"
     return True, "ok"
 
