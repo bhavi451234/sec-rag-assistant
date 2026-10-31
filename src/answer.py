@@ -20,6 +20,8 @@ GENERATION_CONFIG = types.GenerateContentConfig(temperature=0)
 NEIGHBOURS = 0  # chunks to add before and after each search hit (0 = off)
 RERANKER_NAME = "BAAI/bge-reranker-base"
 CANDIDATES = 60  # chunks per company the embedding search hands to the reranker
+PAIR_BUDGET = 12  # chunks per company when exactly two companies are named
+
 
 COMPANY_ALIASES = {
     "AAPL": ["apple", "aapl"],
@@ -129,7 +131,10 @@ def retrieve(
     if not tickers:
         tickers = list(COMPANY_ALIASES)
 
-    per_company = max(2, k // len(tickers))
+    if len(tickers) == 2:
+        per_company = PAIR_BUDGET
+    else:
+        per_company = max(2, k // len(tickers))
     results = []
     for ticker in tickers:
         if reranker is None:
