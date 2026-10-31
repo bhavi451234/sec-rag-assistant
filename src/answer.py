@@ -39,7 +39,11 @@ Cite the sources you use like [1] or [2][3] right after each claim.
 If the sources do not contain the answer, say "I can't find this in the provided filings." and do not guess.
 Give exact figures as written in the sources. Write plain text without markdown formatting.
 If the question asks for a financial amount of a company without naming a segment, region or type of expense, give the company-wide total, not a figure for one segment, region or type of expense. Only apply this to questions about amounts. Answer all other questions normally.
-You may mention a narrower figure afterwards, but only if you label it clearly."""
+You may mention a narrower figure afterwards, but only if you label it clearly.
+If the question asks which of two companies has the higher or larger figure, first write each company's figure on its own line with its unit and its source number, for example "Company A: $1,234 million [3]". Then finish with one last line that starts with "Higher:" followed by the name of the company whose figure is the larger number. Compare the numbers digit by digit before you write that line."""
+
+
+
 def detect_tickers(question: str) -> list[str]:
     """Return the tickers of the companies named in the question, in the order they appear."""
     text = question.lower()

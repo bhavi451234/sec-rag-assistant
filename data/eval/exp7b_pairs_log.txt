@@ -1,0 +1,62 @@
+aapl_vs_msft_sales run 1  PASS  (ok)
+Apple: $416,161 million [11]
+Microsoft: $331,839 million [22]
+
+Higher: Apple
+
+aapl_vs_msft_sales run 2  PASS  (ok)
+Apple: $416,161 million [11]
+Microsoft: $331,839 million [15]
+
+Higher: Apple
+
+aapl_vs_msft_sales run 3  PASS  (ok)
+Apple: $416,161 million [11]
+Microsoft: $331,839 million [15]
+
+Higher: Apple
+
+tsla_vs_jpm_revenue run 1  PASS  (ok)
+Tesla: $94,827 million [1]
+JPMorgan Chase: $182,447 million [17]
+Higher: JPMorgan Chase
+
+tsla_vs_jpm_revenue run 2  PASS  (ok)
+Tesla: $94,827 million [1]
+JPMorgan Chase: $182,447 million [17]
+Higher: JPMorgan Chase
+
+tsla_vs_jpm_revenue run 3  PASS  (ok)
+Tesla: $94,827 million [1]
+JPMorgan Chase: $182,447 million [17]
+Higher: JPMorgan Chase
+
+msft_vs_tsla_revenue run 1  PASS  (ok)
+Microsoft: $331,839 million [3]
+Tesla: $94,827 million [14]
+Higher: Microsoft
+
+msft_vs_tsla_revenue run 2  PASS  (ok)
+Microsoft: $331,839 million [3]
+Tesla: $94,827 million [14]
+Higher: Microsoft
+
+msft_vs_tsla_revenue run 3  PASS  (ok)
+Microsoft: $331,839 million [3]
+Tesla: $94,827 million [14]
+Higher: Microsoft
+
+aapl_vs_xom_revenue run 1  PASS  (ok)
+Apple: $416,161 million [9]
+ExxonMobil: $332,238 million [17]
+Higher: Apple
+
+aapl_vs_xom_revenue run 2  PASS  (ok)
+Apple: $416,161 million [9]
+ExxonMobil: $332,238 million [17]
+Higher: Apple
+
+aapl_vs_xom_revenue run 3  PASS  (ok)
+Apple: $416,161 million [9]
+ExxonMobil: $332,238 million [17]
+Higher: Apple
