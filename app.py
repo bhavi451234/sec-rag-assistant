@@ -1,6 +1,7 @@
+import re
+
 import numpy as np
 import streamlit as st
-import re
 from dotenv import load_dotenv
 from sentence_transformers import CrossEncoder, SentenceTransformer
 
@@ -16,6 +17,12 @@ from src.answer import (
 
 load_dotenv()
 
+EXAMPLES = {
+    "Apple net sales": "What was Apple's total net sales in fiscal 2025?",
+    "Apple vs Exxon": "Which had higher total revenue in its latest fiscal year, Apple or ExxonMobil, and what were the two figures in millions of dollars?",
+    "Snap legal": "What legal proceedings is Snap involved in?",
+}
+
 
 @st.cache_resource(show_spinner="Loading models (first time only)...")
 def load_pipeline():
@@ -26,11 +33,20 @@ def load_pipeline():
     return embedder, reranker, chunks, index
 
 
+def use_example(text):
+    st.session_state["question"] = text
+    st.session_state["run_now"] = True
+
+
 st.title("SEC 10-K assistant")
 embedder, reranker, chunks, index = load_pipeline()
 
-question = st.text_input("Ask a question about the filings")
-if st.button("Ask") and question.strip():
+st.write("Try an example:")
+for label, text in EXAMPLES.items():
+    st.button(label, on_click=use_example, args=(text,))
+
+question = st.text_input("Ask a question about the filings", key="question")
+if (st.button("Ask") or st.session_state.pop("run_now", False)) and question.strip():
     try:
         with st.spinner("Searching the filings..."):
             result = answer(question, embedder, index, chunks, reranker=reranker)
