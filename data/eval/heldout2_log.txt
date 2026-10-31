@@ -1,0 +1,44 @@
+ho_msft_vs_jnj_revenue run 1  PASS  (ok)
+Microsoft: $331,839 million [2]
+Johnson & Johnson: $94,193 million [16]
+Higher: Microsoft
+
+ho_msft_vs_jnj_revenue run 2  PASS  (ok)
+Microsoft: $331,839 million [2]
+Johnson & Johnson: $94,193 million [16]
+Higher: Microsoft
+
+ho_msft_vs_jnj_revenue run 3  PASS  (ok)
+Microsoft: $331,839 million [2]
+Johnson & Johnson: $94,193 million [16]
+Higher: Microsoft
+
+ho_jnj_vs_jpm_revenue run 1  PASS  (ok)
+Johnson & Johnson: $94,193 million [1]
+JPMorgan Chase: $182,447 million [13]
+Higher: JPMorgan Chase
+
+ho_jnj_vs_jpm_revenue run 2  PASS  (ok)
+Johnson & Johnson: $94,193 million [1]
+JPMorgan Chase: $182,447 million [13][16]
+Higher: JPMorgan Chase
+
+ho_jnj_vs_jpm_revenue run 3  PASS  (ok)
+Johnson & Johnson: $94,193 million [1]
+JPMorgan Chase: $182,447 million [13][16]
+Higher: JPMorgan Chase
+
+ho_xom_vs_aapl_income run 1  PASS  (ok)
+ExxonMobil: $28,844 million [3]
+Apple: $112,010 million [13]
+Higher: Apple
+
+ho_xom_vs_aapl_income run 2  PASS  (ok)
+ExxonMobil: $28,844 million [3]
+Apple: $112,010 million [13]
+Higher: Apple
+
+ho_xom_vs_aapl_income run 3  PASS  (ok)
+ExxonMobil: $28,844 million [3]
+Apple: $112,010 million [13]
+Higher: Apple
