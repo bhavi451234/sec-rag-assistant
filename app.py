@@ -31,11 +31,26 @@ embedder, reranker, chunks, index = load_pipeline()
 
 question = st.text_input("Ask a question about the filings")
 if st.button("Ask") and question.strip():
-    with st.spinner("Searching the filings..."):
-        result = answer(question, embedder, index, chunks, reranker=reranker)
+    try:
+        with st.spinner("Searching the filings..."):
+            result = answer(question, embedder, index, chunks, reranker=reranker)
+    except RuntimeError:
+        st.error(
+            "The language model is not available right now. "
+            "The free daily limit may be used up, so please try again later."
+        )
+        st.stop()
+    except Exception as error:
+        print("answer() failed:", repr(error))
+        st.error("Something went wrong while answering. Please try again.")
+        st.stop()
     st.write(result["answer"].replace("$", "\\$"))
     cited = {int(n) for n in re.findall(r"\[(\d+)\]", result["answer"])}
-    st.subheader("Sources")
+    if cited:
+        st.subheader("Sources")
+    else:
+        st.subheader("Passages searched")
+        st.caption("The answer cites none of these.")
     for number, source in enumerate(result["sources"], start=1):
         mark = "✓ cited · " if number in cited else ""
         label = f"{mark}[{number}] {source['ticker']} · {source['section']} · period {source['period']}"

@@ -6,6 +6,7 @@ from pathlib import Path
 
 import numpy as np
 from sentence_transformers import CrossEncoder, SentenceTransformer
+from src.answer import COMPANY_ALIASES
 
 from src.answer import RERANKER_NAME, answer
 from src.check_eval_set import load_eval
@@ -41,8 +42,20 @@ def judge(entry, answer_text):
         bad_position = text.find(bad.lower())
         if bad_position != -1 and bad_position < first_position:
             return False, f"wrong value {bad!r} comes before the expected one"
-    return True, "ok"
 
+    winner = entry.get("winner")
+    if winner is not None:
+        earliest = len(text)
+        first_company = None
+        for ticker in entry["ticker"]:
+            for alias in COMPANY_ALIASES[ticker]:
+                alias_position = text.find(alias)
+                if alias_position != -1 and alias_position < earliest:
+                    earliest = alias_position
+                    first_company = ticker
+        if first_company != winner:
+            return False, f"names {first_company} first, but the higher one is {winner}"
+    return True, "ok"
 
 def main():
     wanted_ids = sys.argv[1:]

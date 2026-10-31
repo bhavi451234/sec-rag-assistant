@@ -1,0 +1,71 @@
+aapl_vs_msft_sales run 1  PASS  (ok)
+Microsoft reported higher total revenue in its latest fiscal year [11][15]. Microsoft's total revenue for the fiscal year ended June 30, 2026, was $331,839 million [15]. Apple's total revenue for the fiscal year ended September 27, 2025, was $416,161 million [11][8].
+
+aapl_vs_msft_sales run 2  PASS  (ok)
+Microsoft reported higher total revenue in its latest fiscal year [11][22]. Microsoft reported total revenue of $331,839 million for the fiscal year ended June 30, 2026 [22], and Apple reported total net sales of $416,161 million for the fiscal year ended September 27, 2025 [11].
+
+aapl_vs_msft_sales run 3  PASS  (ok)
+Microsoft reported higher total revenue in its latest fiscal year [11][15]. Microsoft's total revenue for the year ended June 30, 2026, was $331,839 million, and Apple's total net sales for the fiscal year ended September 27, 2025, were $416,161 million [11][15].
+
+tsla_vs_jpm_revenue run 1  PASS  (ok)
+JPMorgan Chase's total net revenue is larger [1][13]. For the year ended December 31, 2025, Tesla's total revenues were $94,827 million, and JPMorgan Chase's total net revenue was $182,447 million [1][13].
+
+tsla_vs_jpm_revenue run 2  PASS  (ok)
+JPMorgan Chase's total net revenue is larger [1][13]. For the year ended December 31, 2025, Tesla's total revenues were $94,827 million and JPMorgan Chase's total net revenue was $182,447 million [1][15].
+
+tsla_vs_jpm_revenue run 3  PASS  (ok)
+JPMorgan Chase's total net revenue is larger [1][13]. For the year ended December 31, 2025, Tesla's total revenues were $94,827 million [1], and JPMorgan Chase's total net revenue was $182,447 million [15].
+
+msft_vs_tsla_revenue run 1  PASS  (ok)
+Microsoft had higher total revenue in its latest fiscal year. For their respective latest fiscal years, Microsoft reported total revenue of $331,839 million (for the year ended June 30, 2026) [3][10], and Tesla reported total revenue of $94,827 million (for the year ended December 31, 2025) [14][20].
+
+msft_vs_tsla_revenue run 2  PASS  (ok)
+Microsoft had higher total revenue in its latest fiscal year [3][14]. Microsoft's total revenue for the fiscal year ended June 30, 2026, was $331,839 million, and Tesla's total revenue for the fiscal year ended December 31, 2025, was $94,827 million [3][14][20].
+
+msft_vs_tsla_revenue run 3  PASS  (ok)
+Microsoft had higher total revenue in its latest fiscal year [3][14]. Microsoft's total revenue for its fiscal year ended June 30, 2026, was $331,839 million, and Tesla's total revenue for its fiscal year ended December 31, 2025, was $94,827 million [3][14][20].
+
+aapl_vs_xom_revenue run 1  PASS  (ok)
+ExxonMobil had higher total revenue in its latest fiscal year, with total consolidated revenues and other income of $332,238 million [17], compared to Apple's total net sales of $416,161 million [9]. (Note: Apple's total net sales of $416,161 million [9] are higher than ExxonMobil's revenue figure, but ExxonMobil's total revenue of $332,238 million [17] is higher than Apple's total net sales when comparing the specific line items provided as total revenues).
+
+aapl_vs_xom_revenue run 2  PASS  (ok)
+ExxonMobil had higher total revenue in its latest fiscal year [9][18]. ExxonMobil's total consolidated revenues and other income was $332,238 million [18], and Apple's total net sales was $416,161 million [9]. *(Note: Apple's net sales figure is lower, but ExxonMobil is identified as having higher total revenue based on total consolidated revenues and other income [9][18].)*
+
+aapl_vs_xom_revenue run 3  PASS  (ok)
+ExxonMobil had higher total revenue in its latest fiscal year, with total consolidated revenues and other income of $332,238 million [17], compared to Apple's total net sales of $416,161 million [9]. (Note: Apple's figure represents net sales [9], while ExxonMobil's higher total is based on total consolidated revenues and other income [17]).
+
+aapl_vs_msft_sales run 1  FAIL  (names MSFT first, but the higher one is AAPL)
+Microsoft reported higher total revenue in its latest fiscal year [11][22]. Microsoft reported total revenue of $331,839 million for the year ended June 30, 2026 [22], while Apple reported total revenue of $416,161 million for the year ended September 27, 2025 [11].
+
+aapl_vs_msft_sales run 2  FAIL  (names MSFT first, but the higher one is AAPL)
+Microsoft reported higher total revenue in its latest fiscal year [11][15]. The company-wide total revenue figures in millions of dollars were $416,161 for Apple (for the fiscal year ended September 27, 2025) and $331,839 for Microsoft (for the fiscal year ended June 30, 2026) [11][15].
+
+aapl_vs_msft_sales run 3  FAIL  (names MSFT first, but the higher one is AAPL)
+Microsoft reported higher total revenue in its latest fiscal year [11][15][22]. Microsoft's total revenue for fiscal year 2026 was $331,839 million [15][22], and Apple's total net sales for fiscal year 2025 were $416,161 million [11].
+
+tsla_vs_jpm_revenue run 1  PASS  (ok)
+JPMorgan Chase's total net revenue is larger [1][13]. For the year ended December 31, 2025, Tesla's total revenues were $94,827 million, and JPMorgan Chase's total net revenue was $182,447 million [1][15].
+
+tsla_vs_jpm_revenue run 2  PASS  (ok)
+JPMorgan Chase's total net revenue is larger [1][13]. For the year ended December 31, 2025, Tesla's total revenues were $94,827 million, and JPMorgan Chase's total net revenue was $182,447 million [1][13].
+
+tsla_vs_jpm_revenue run 3  PASS  (ok)
+JPMorgan Chase's total net revenue is larger [1][13]. For the year ended December 31, 2025, Tesla's total revenues were $94,827 million [1], and JPMorgan Chase's total net revenue was $182,447 million [13] (also reported as $185,581 million on a managed basis) [15].
+
+msft_vs_tsla_revenue run 1  PASS  (ok)
+Microsoft had higher total revenue in its latest fiscal year. Microsoft's total revenue for the fiscal year ended June 30, 2026, was $331,839 million, while Tesla's total revenue for the fiscal year ended December 31, 2025, was $94,827 million [3][14].
+
+msft_vs_tsla_revenue run 2  PASS  (ok)
+Microsoft had higher total revenue in its latest fiscal year [3][14]. Microsoft's total revenue was $331,839 million for the year ended June 30, 2026, while Tesla's total revenue was $94,827 million for the year ended December 31, 2025 [3][14][20].
+
+msft_vs_tsla_revenue run 3  PASS  (ok)
+Microsoft had higher total revenue in its latest fiscal year [3][14]. Microsoft's total revenue for its fiscal year ended June 30, 2026, was $331,839 million, and Tesla's total revenue for its fiscal year ended December 31, 2025, was $94,827 million [3][14][20].
+
+aapl_vs_xom_revenue run 1  FAIL  (names XOM first, but the higher one is AAPL)
+ExxonMobil had higher total revenue in its latest fiscal year, with total consolidated revenues and other income of $332,238 million [17], compared to Apple's total net sales of $416,161 million [9]. (Note: Apple's net sales figure of $416,161 million [9] is higher than ExxonMobil's revenue figure of $332,238 million [17]).
+
+aapl_vs_xom_revenue run 2  FAIL  (names XOM first, but the higher one is AAPL)
+ExxonMobil had higher total revenue in its latest fiscal year [9][18]. ExxonMobil's total consolidated revenues and other income was $332,238 million [18], and Apple's total net sales was $416,161 million [9]. (Note: Apple's net sales figure is lower, but ExxonMobil's revenue is higher when comparing total consolidated revenues and other income).
+
+aapl_vs_xom_revenue run 3  FAIL  (names XOM first, but the higher one is AAPL)
+ExxonMobil had higher total revenue in its latest fiscal year, with total consolidated revenues and other income of $332,238 million [17], compared to Apple's total net sales of $416,161 million [9]. (Note: Apple's net sales figure of $416,161 million [9] is higher than ExxonMobil's revenue figure, but ExxonMobil is the correct answer because its company-wide total revenue of $332,238 million [17] is higher when comparing total revenue lines, as Apple's $416,161 million [9] represents net sales).
