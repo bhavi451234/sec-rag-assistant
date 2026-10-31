@@ -1,13 +1,18 @@
 """Download the most recent 10-K annual report for each company from SEC EDGAR."""
 
 import json
+import os
 import time
 from pathlib import Path
 
 import requests
+from dotenv import load_dotenv
 
-# The SEC requires every request to say who is asking. Use your own name and email.
-HEADERS = {"User-Agent": "Your Name your.email@example.com"}
+load_dotenv()
+
+# The SEC requires every request to say who is asking.
+# Put your name and email in .env as: SEC_USER_AGENT="Your Name your.email@example.com"
+HEADERS = {"User-Agent": os.environ.get("SEC_USER_AGENT", "")}
 
 TICKERS = ["AAPL", "MSFT", "TSLA", "SNAP", "JPM", "XOM", "JNJ"]
 OUT_DIR = Path("data/filings")

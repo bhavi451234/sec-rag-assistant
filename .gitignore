@@ -6,3 +6,4 @@ data/chunks/
 .pytest_cache/
 data/index/
 .env
+data/eval/score_answers_partial_log.txt
