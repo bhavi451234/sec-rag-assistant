@@ -45,17 +45,22 @@ def judge(entry, answer_text):
 
     winner = entry.get("winner")
     if winner is not None:
-        earliest = len(text)
+        if "higher:" in text:
+            claim_text = text.rsplit("higher:", 1)[1]
+        else:
+            claim_text = text
+        earliest = len(claim_text)
         first_company = None
         for ticker in entry["ticker"]:
             for alias in COMPANY_ALIASES[ticker]:
-                alias_position = text.find(alias)
+                alias_position = claim_text.find(alias)
                 if alias_position != -1 and alias_position < earliest:
                     earliest = alias_position
                     first_company = ticker
         if first_company != winner:
-            return False, f"names {first_company} first, but the higher one is {winner}"
+            return False, f"names {first_company} as the winner, but the higher one is {winner}"
     return True, "ok"
+
 
 def main():
     wanted_ids = sys.argv[1:]
