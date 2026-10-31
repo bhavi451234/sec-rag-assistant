@@ -7,6 +7,7 @@ from sentence_transformers import CrossEncoder, SentenceTransformer
 
 from src.answer import (
     CHUNKS_PATH,
+    COMPANY_ALIASES,
     MODEL_NAME,
     RERANKER_NAME,
     VECTORS_PATH,
@@ -21,6 +22,16 @@ EXAMPLES = {
     "Apple net sales": "What was Apple's total net sales in fiscal 2025?",
     "Apple vs Exxon": "Which had higher total revenue in its latest fiscal year, Apple or ExxonMobil, and what were the two figures in millions of dollars?",
     "Snap legal": "What legal proceedings is Snap involved in?",
+}
+
+COMPANY_NAMES = {
+    "AAPL": "Apple",
+    "MSFT": "Microsoft",
+    "TSLA": "Tesla",
+    "SNAP": "Snap",
+    "JPM": "JPMorgan Chase",
+    "XOM": "ExxonMobil",
+    "JNJ": "Johnson & Johnson",
 }
 
 
@@ -45,11 +56,21 @@ st.write("Try an example:")
 for label, text in EXAMPLES.items():
     st.button(label, on_click=use_example, args=(text,))
 
+selected = st.sidebar.multiselect(
+    "Companies to search",
+    list(COMPANY_ALIASES),
+    format_func=lambda ticker: f"{COMPANY_NAMES[ticker]} ({ticker})",
+    help="Leave empty to detect the companies from your question.",
+)
+
 question = st.text_input("Ask a question about the filings", key="question")
 if (st.button("Ask") or st.session_state.pop("run_now", False)) and question.strip():
     try:
         with st.spinner("Searching the filings..."):
-            result = answer(question, embedder, index, chunks, reranker=reranker)
+            result = answer(
+                question, embedder, index, chunks,
+                reranker=reranker, tickers=selected or None,
+            )
     except RuntimeError:
         st.error(
             "The language model is not available right now. "
