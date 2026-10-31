@@ -7,7 +7,7 @@ import numpy as np
 from dotenv import load_dotenv
 from google import genai
 from google.genai import errors, types
-from sentence_transformers import SentenceTransformer
+from sentence_transformers import CrossEncoder, SentenceTransformer
 
 from src.search import CHUNKS_PATH, MODEL_NAME, VECTORS_PATH, build_index, load_chunks, search
 
@@ -17,6 +17,9 @@ LLM_MODELS = ["gemini-3.5-flash-lite", "gemini-3.6-flash"]
 RETRIES = 3
 RETRY_CODES = (429, 500, 503)
 GENERATION_CONFIG = types.GenerateContentConfig(temperature=0)
+NEIGHBOURS = 0  # chunks to add before and after each search hit (0 = off)
+RERANKER_NAME = "BAAI/bge-reranker-base"
+CANDIDATES = 60  # chunks per company the embedding search hands to the reranker
 
 COMPANY_ALIASES = {
     "AAPL": ["apple", "aapl"],
@@ -84,8 +87,42 @@ def ask_llm(prompt: str) -> str:
                 time.sleep(5 * (attempt + 1))
     raise RuntimeError("All Gemini models are busy right now. Please try again in a minute.")
 
+def rerank(question: str, candidates: list[dict], reranker: CrossEncoder) -> list[dict]:
+    """Reorder candidate chunks by how well each one answers the question (best first)."""
+    scores = reranker.predict([(question, candidate["text"]) for candidate in candidates])
+    order = np.argsort(-scores)
+    return [{**candidates[i], "score": float(scores[i])} for i in order]
+
+def add_neighbours(results: list[dict], chunks: list[dict], neighbours: int) -> list[dict]:
+    """Add the chunks just before and after each hit, so a passage cut in two is whole again."""
+    if neighbours == 0:
+        return results
+    position_of = {chunk["chunk_id"]: position for position, chunk in enumerate(chunks)}
+    expanded = []
+    seen = set()
+    for result in results:
+        centre = position_of[result["chunk_id"]]
+        for position in range(centre - neighbours, centre + neighbours + 1):
+            if not 0 <= position < len(chunks):
+                continue
+            chunk = chunks[position]
+            if chunk["ticker"] != result["ticker"] or chunk["period"] != result["period"]:
+                continue
+            if chunk["chunk_id"] in seen:
+                continue
+            seen.add(chunk["chunk_id"])
+            expanded.append({**chunk, "score": result["score"]})
+    return expanded
+
+
 def retrieve(
-    question: str, embedder: SentenceTransformer, index, chunks: list[dict], k: int = 8
+    question: str,
+    embedder: SentenceTransformer,
+    index,
+    chunks: list[dict],
+    k: int = 8,
+    neighbours: int = NEIGHBOURS,
+    reranker=None,
 ) -> list[dict]:
     """Find the best chunks. Search the companies named in the question, or all of them if none is named."""
     tickers = detect_tickers(question)
@@ -95,8 +132,13 @@ def retrieve(
     per_company = max(2, k // len(tickers))
     results = []
     for ticker in tickers:
-        results += search(question, embedder, index, chunks, k=per_company, ticker=ticker)
-    return results
+        if reranker is None:
+            results += search(question, embedder, index, chunks, k=per_company, ticker=ticker)
+        else:
+            candidate_count = CANDIDATES if len(tickers) <= 2 else 15
+            candidates = search(question, embedder, index, chunks, k=candidate_count, ticker=ticker)
+            results += rerank(question, candidates, reranker)[:per_company]
+    return add_neighbours(results, chunks, neighbours)
 
 
 def answer(
@@ -106,14 +148,14 @@ def answer(
     chunks: list[dict],
     k: int = 8,
     llm=ask_llm,
+    reranker=None,
 ) -> dict:
     """Return {"answer": text, "sources": the chunks used}."""
-    results = retrieve(question, embedder, index, chunks, k=k)
+    results = retrieve(question, embedder, index, chunks, k=k, reranker=reranker)
     if not results:
         return {"answer": "I can't find this in the provided filings.", "sources": []}
     prompt = build_prompt(question, results)
     return {"answer": llm(prompt), "sources": results}
-
 
 if __name__ == "__main__":
     embedder = SentenceTransformer(MODEL_NAME)

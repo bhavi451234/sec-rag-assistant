@@ -1,38 +1,38 @@
 aapl_net_sales run 1  PASS  (ok)
-Apple's total net sales in fiscal 2025 were $416,161 million [1][2][3].
+Apple's total net sales in fiscal 2025 were $416,161 million [7].
 
 aapl_net_sales run 2  PASS  (ok)
-Apple's total net sales in fiscal 2025 were $416,161 million [1].
+Apple's total net sales in fiscal 2025 were $416,161 million [7].
 
 aapl_net_sales run 3  PASS  (ok)
-Apple's total net sales in fiscal 2025 were $416,161 million [1][2][3][5].
+Apple's total net sales in fiscal 2025 were $416,161 million [7][8].
 
 msft_revenue run 1  PASS  (ok)
-Microsoft's total revenue in fiscal 2026 was $331,839 million [3][5].
+Microsoft's total revenue in fiscal 2026 was $331,839 million [1][2][6].
 
 msft_revenue run 2  PASS  (ok)
-Microsoft's total revenue in fiscal 2026 was $331,839 million [3][5].
+Microsoft's total revenue in fiscal year 2026 was $331,839 million [1][6].
 
 msft_revenue run 3  PASS  (ok)
-Microsoft's total revenue in fiscal 2026 was $331,839 million [3][5].
+Microsoft's total revenue in fiscal 2026 was $331,839 million [1][2][6].
 
 jnj_talc_reserve run 1  PASS  (ok)
-As of December 28, 2025, the total present value of the reserve to resolve the talc claims is approximately $3.4 billion [1][3].
+As of December 28, 2025, the total present value of the reserve to resolve the talc claims is approximately $3.4 billion [1][2].
 
 jnj_talc_reserve run 2  PASS  (ok)
-As of December 28, 2025, the total present value of the reserve to resolve the talc claims is approximately $3.4 billion [1][3].
+As of December 28, 2025, the total present value of the reserve to resolve the talc claims is approximately $3.4 billion [1][2].
 
 jnj_talc_reserve run 3  PASS  (ok)
-As of December 28, 2025, the total present value of the reserve to resolve the talc claims is approximately $3.4 billion [1][3].
+As of December 28, 2025, the total present value of the reserve to resolve the talc claims is approximately $3.4 billion [1][2].
 
 xom_capex run 1  PASS  (ok)
-Exxon spent $29.0 billion on Cash Capex in 2025, which includes $2.6 billion of acquisitions [4].
+Exxon spent $29.0 billion on Cash Capex in 2025, which includes $2.6 billion of acquisitions [3].
 
 xom_capex run 2  PASS  (ok)
-Exxon spend $29.0 billion on Cash Capex in 2025, which included $2.6 billion of acquisitions [4]. Worldwide environmental capital expenditures for preventative and remediation steps were $3,053 million (or approximately $3.4 billion, calculated as 44 percent of total expected expenditures or derived from the 7.6 billion total environmental expenditures where $4.6 billion were expenses) [1][2].
+Exxon's Cash Capex in 2025 was $29.0 billion, which includes $2.6 billion of acquisitions [3]. Additionally, spending for additions to property, plant, and equipment was $28.4 billion [8].
 
 xom_capex run 3  PASS  (ok)
-Exxon spent $29.0 billion on Cash Capex in 2025, which includes $2.6 billion of acquisitions [4].
+Exxon's Cash Capex in 2025 was $29.0 billion, which includes $2.6 billion of acquisitions [3].
 
 tsla_price run 1  PASS  (ok)
 I can't find this in the provided filings.
@@ -44,13 +44,13 @@ tsla_price run 3  PASS  (ok)
 I can't find this in the provided filings.
 
 snap_revenue run 1  PASS  (ok)
-Snap's revenue in fiscal 2025 was $5,931,447 thousand [3].
+Snap's revenue in fiscal 2025 was $5,931,447 thousand [1].
 
 snap_revenue run 2  PASS  (ok)
-Snap's revenue in fiscal 2025 was $5,931,447 thousand [3].
+Snap's revenue in fiscal 2025 was $5,931,447 thousand [1].
 
 snap_revenue run 3  PASS  (ok)
-Snap's revenue in fiscal 2025 was $5,931,447 thousand [3].
+Snap's revenue in fiscal 2025 was $5,931,447 thousand [1].
 
 tsla_revenue run 1  PASS  (ok)
 Tesla's total revenues in fiscal 2025 were $94,827 million [2].
@@ -62,49 +62,49 @@ tsla_revenue run 3  PASS  (ok)
 Tesla's total revenues in fiscal 2025 were $94,827 million [2].
 
 jpm_net_revenue run 1  PASS  (ok)
-JPMorgan Chase's reported total net revenue was $182,447 million in fiscal 2025 [6].
+JPMorgan Chase reported total net revenue of $182,447 million in fiscal 2025 [2][4].
 
 jpm_net_revenue run 2  PASS  (ok)
-JPMorgan Chase's reported total net revenue was $182,447 million in fiscal 2025 [6]. (On a managed basis, total net revenue was $185,581 million [6][7].)
+JPMorgan Chase's reported total net revenue was $182,447 million in fiscal 2025 [2]. (On a managed basis, total net revenue was $185,581 million [2].)
 
 jpm_net_revenue run 3  PASS  (ok)
-JPMorgan Chase's reported total net revenue was $182,447 million in fiscal 2025 [6].
+JPMorgan Chase's reported total net revenue was $182,447 million in fiscal 2025 [2].
 
 jnj_sales run 1  PASS  (ok)
-Johnson & Johnson's total sales to customers in fiscal 2025 were $94,193 million [3].
+Johnson and Johnson's total sales to customers in fiscal 2025 were $94,193 million [1].
 
 jnj_sales run 2  PASS  (ok)
-Johnson & Johnson's total sales to customers in fiscal 2025 were $94,193 million [3].
+Johnson & Johnson's total sales to customers in fiscal 2025 were $94,193 million [1].
 
 jnj_sales run 3  PASS  (ok)
-Johnson & Johnson's total sales to customers in fiscal 2025 were $94,193 million [3].
+Johnson & Johnson's total sales to customers in fiscal 2025 were $94,193 million [1].
 
 xom_net_income run 1  PASS  (ok)
-Exxon's net income attributable to ExxonMobil in fiscal 2025 was 28,844 million dollars [6].
+Exxon's net income attributable to ExxonMobil in fiscal 2025 was 28,844 million dollars [1][3].
 
 xom_net_income run 2  PASS  (ok)
-Exxon's net income attributable to ExxonMobil in fiscal 2025 was 28,844 million dollars [6].
+Exxon's net income attributable to ExxonMobil in fiscal 2025 was 28,844 million dollars [1][3].
 
 xom_net_income run 3  PASS  (ok)
-Exxon's net income attributable to ExxonMobil in fiscal 2025 was 28,844 million dollars [6].
+Exxon's net income attributable to ExxonMobil in fiscal 2025 was 28,844 million dollars [1][3].
 
 jnj_innovative_medicine run 1  PASS  (ok)
-Johnson & Johnson's Innovative Medicine segment sales to customers in fiscal 2025 were $60,401 million [5].
+Johnson & Johnson's Innovative Medicine segment sales to customers in fiscal 2025 were $60,401 million [2].
 
 jnj_innovative_medicine run 2  PASS  (ok)
-Johnson and Johnson's Innovative Medicine segment sales to customers in fiscal 2025 were $78,057 million [1]. (Note: Segment sales were also reported as $60,401 million) [5].
+Johnson & Johnson's Innovative Medicine segment sales to customers in fiscal 2025 were $60,401 million [1][2][8].
 
 jnj_innovative_medicine run 3  PASS  (ok)
-Johnson & Johnson's Innovative Medicine segment sales to customers in fiscal 2025 were $60,401 million [5].
+Johnson & Johnson's Innovative Medicine segment sales to customers in fiscal 2025 were $60,401 million [2].
 
 aapl_services run 1  PASS  (ok)
-Apple's Services net sales in fiscal 2025 were $109,158 million [1][4].
+Apple's Services net sales in fiscal 2025 were $109,158 million [4][5][6].
 
 aapl_services run 2  PASS  (ok)
-Apple's Services net sales in fiscal 2025 were $109,158 million [1][4].
+Apple's Services net sales in fiscal 2025 were $109,158 million [4][5][6].
 
 aapl_services run 3  PASS  (ok)
-Apple's Services net sales in fiscal 2025 were $109,158 million [1][4].
+Apple's Services net sales in fiscal 2025 were $109,158 million [4][5][6].
 
 aapl_noncurrent_liabilities run 1  PASS  (ok)
 Apple's total non-current liabilities in fiscal 2025 were $119,877 million [1].
@@ -116,13 +116,13 @@ aapl_noncurrent_liabilities run 3  PASS  (ok)
 Apple's total non-current liabilities in fiscal 2025 were $119,877 million [1].
 
 xom_revenue run 1  FAIL  (missing expected '332,238')
-ExxonMobil's total revenue in 2025 was 323,905 million dollars [5].
+I can't find this in the provided filings.
 
-xom_revenue run 2  FAIL  (missing expected '332,238')
-ExxonMobil's total revenue in 2025 was 323,905 million dollars [5].
+xom_revenue run 2  PASS  (ok)
+ExxonMobil's total revenues and other income in 2025 was 332,238 million dollars [7].
 
 xom_revenue run 3  FAIL  (missing expected '332,238')
-ExxonMobil's total revenue in 2025 was 323,905 million dollars [5].
+I can't find this in the provided filings.
 
 jnj_noncurrent_liabilities run 1  PASS  (ok)
 I can't find this in the provided filings.
@@ -133,76 +133,69 @@ I can't find this in the provided filings.
 jnj_noncurrent_liabilities run 3  PASS  (ok)
 I can't find this in the provided filings.
 
-aapl_employees run 1  FAIL  (missing expected '166,000')
-I can't find this in the provided filings.
+aapl_employees run 1  PASS  (ok)
+As of September 27, 2025, the Company had approximately 166,000 full-time equivalent employees [1].
 
-aapl_employees run 2  FAIL  (missing expected '166,000')
-I can't find this in the provided filings.
+aapl_employees run 2  PASS  (ok)
+As of September 27, 2025, the Company had approximately 166,000 full-time equivalent employees [1].
 
-aapl_employees run 3  FAIL  (missing expected '166,000')
-I can't find this in the provided filings.
+aapl_employees run 3  PASS  (ok)
+As of September 27, 2025, Apple had approximately 166,000 full-time equivalent employees [1].
 
 msft_headquarters run 1  PASS  (ok)
-Microsoft's corporate headquarters are located in Redmond, Washington [1].
+Microsoft's corporate headquarters are located in Redmond, Washington [5][6].
 
 msft_headquarters run 2  PASS  (ok)
-Microsoft's corporate headquarters are located in Redmond, Washington [1].
+Microsoft's corporate headquarters are located in Redmond, Washington [5][6].
 
 msft_headquarters run 3  PASS  (ok)
-Microsoft's corporate headquarters are located in Redmond, Washington [1].
+Microsoft's corporate headquarters are located in Redmond, Washington [5][6].
 
 jpm_auditor run 1  PASS  (ok)
-PricewaterhouseCoopers LLP [5]
+PricewaterhouseCoopers LLP is JPMorgan Chase's independent registered public accounting firm for 2025 [1].
 
 jpm_auditor run 2  PASS  (ok)
-PricewaterhouseCoopers LLP [5]
+JPMorgan Chase's independent registered public accounting firm for 2025 is PricewaterhouseCoopers LLP [1].
 
 jpm_auditor run 3  PASS  (ok)
-The independent registered public accounting firm that audited JPMorgan Chase's internal control over financial reporting as of December 31, 2025, is PricewaterhouseCoopers LLP [5].
+JPMorgan Chase's independent registered public accounting firm for 2025 is PricewaterhouseCoopers LLP [1].
 
-aapl_vs_msft_sales run 1  PASS  (ok)
-Apple reported higher total net sales in its latest fiscal year compared to Microsoft's total revenue [1][6]. Apple's total net sales were $416,161 million [1], and Microsoft's total revenue was $331,839 million [6].
+aapl_vs_msft_sales run 1  FAIL  (missing expected '416,161')
+Microsoft reported higher total revenue in its latest fiscal year [1][7]. 
+Microsoft's total revenue for the fiscal year ended June 30, 2026, was $331,839 million [7]. 
+Apple's total revenue cannot be determined from the provided filings, but Apple's net income for the fiscal year ended September 27, 2025, was $112,010 million [1].
 
-aapl_vs_msft_sales run 2  PASS  (ok)
-Apple reported higher total net sales in its latest fiscal year compared to Microsoft's total revenue [1][6]. Apple's total net sales were $416,161 million [1], and Microsoft's total revenue was $331,839 million [6].
+aapl_vs_msft_sales run 2  FAIL  (missing expected '416,161')
+Microsoft reported higher total revenue in its latest fiscal year [1][7]. Microsoft's total revenue for the year ended June 30, 2026 was $331,839 million [7]. For Apple's fiscal year ended September 27, 2025, the provided sources do not state Apple's total company-wide revenue figure (though they report Apple net income of $112,010 million and specific segment figures such as Services revenue of $26,844 million) [1][2].
 
-aapl_vs_msft_sales run 3  PASS  (ok)
-Apple reported higher total net sales in its latest fiscal year compared to Microsoft's total revenue [1][6]. Apple's total net sales were $416,161 million [1], and Microsoft's total revenue was $331,839 million [6].
+aapl_vs_msft_sales run 3  FAIL  (missing expected '416,161')
+Microsoft reported higher total revenue in its latest fiscal year. Microsoft's total revenue for the year ended June 30, 2026 was $331,839 million [7]. Apple's total revenue for the year ended September 27, 2025 cannot be found in the provided filings.
 
-tsla_vs_jpm_revenue run 1  FAIL  (missing expected '182,447')
-JPMorgan Chase's total net revenue is larger than Tesla's total revenues [3][7]. JPMorgan Chase's total net revenue for 2025 was $182,400 million ($182.4 billion) [5][7], and Tesla's total revenues for 2025 were $94,827 million [3].
+tsla_vs_jpm_revenue run 1  PASS  (ok)
+JPMorgan Chase's total net revenue is larger [1][7]. Tesla's total revenues were $94,827 million for the year ended December 31, 2025, and JPMorgan Chase's total net revenue was $182,447 million for the year ended December 31, 2025 (or $185,581 million on a managed basis) [1][7].
 
-tsla_vs_jpm_revenue run 2  FAIL  (missing expected '182,447')
-JPMorgan Chase's total net revenue is larger [3][7]. 
+tsla_vs_jpm_revenue run 2  PASS  (ok)
+JPMorgan Chase's total net revenue is larger [1][7]. Tesla's total revenues were $94,827 million and JPMorgan Chase's total net revenue was $182,447 million (or $185,581 million on a managed basis) for the year ended December 31, 2025 [1][7].
 
-The two figures in millions of dollars are:
-JPMorgan Chase's total net revenue: $182,400 million [7] (reported as $182.4 billion)
-Tesla's total revenues: $94,827 million [3]
-
-tsla_vs_jpm_revenue run 3  FAIL  (missing expected '182,447')
-JPMorgan Chase's total net revenue is larger than Tesla's total revenues [3][7]. For the year ended December 31, 2025, JPMorgan Chase reported total net revenue of $182,400 million (or $182.4 billion), and Tesla reported total revenues of $94,827 million [3][5][7].
+tsla_vs_jpm_revenue run 3  PASS  (ok)
+JPMorgan Chase's total net revenue is larger [1][7]. Tesla's total revenues were $94,827 million for the year ended December 31, 2025, and JPMorgan Chase's total net revenue was $182,447 million (or $185,581 million on a managed basis) for the year ended December 31, 2025 [1][7].
 
 msft_vs_tsla_revenue run 1  PASS  (ok)
-Microsoft had higher total revenue in its latest fiscal year [3][7]. Microsoft's total revenue was $331,839 million ($331.839 billion) [3], and Tesla's total revenue was $94,827 million [7].
+Microsoft had higher total revenue in its latest fiscal year [1][3][6]. 
+Microsoft's total revenue for the fiscal year ended June 30, 2026, was $331,839 million [3]. 
+Tesla's total revenue for the fiscal year ended December 31, 2025, was $94,827 million [6].
 
 msft_vs_tsla_revenue run 2  PASS  (ok)
-Microsoft had higher total revenue in its latest fiscal year [3][7]. Microsoft's total revenue was $331,839 million, and Tesla's total revenue was $94,827 million [3][7].
+Microsoft had higher total revenue in its latest fiscal year [1][3][6]. Microsoft's total revenue for the fiscal year ended June 30, 2026, was $331,839 million [3], and Tesla's total revenue for the fiscal year ended December 31, 2025, was $94,827 million [6].
 
 msft_vs_tsla_revenue run 3  PASS  (ok)
-Microsoft had higher total revenue in its latest fiscal year [3][7]. Microsoft's total revenue was $331,839 million (or $331.839 billion) for fiscal year 2026 [3], and Tesla's total revenue was $94,827 million for fiscal year 2025 [7].
+Microsoft had higher total revenue in its latest fiscal year [1][3][6]. Microsoft's total revenue for the year ended June 30, 2026, was $331,839 million [3]. Tesla's total revenue for the year ended December 31, 2025, was $94,827 million [6].
 
-aapl_vs_xom_revenue run 1  FAIL  (missing expected '332,238')
-ExxonMobil had higher total revenue in its latest fiscal year. ExxonMobil's total consolidated revenues and other income was $349,585 million [7], while Apple's total net sales was $416,161 million. Wait, 416,161 is larger than 349,585. Let me re-read the sources carefully. 
+aapl_vs_xom_revenue run 1  FAIL  (missing expected '416,161')
+I can't find this in the provided filings.
 
-Apple's total net sales was $416,161 million for the year ended September 27, 2025 [2][3]. 
-ExxonMobil's total consolidated revenues and other income was $349,585 million for its latest fiscal year ended December 31, 2025 [5][7]. 
-Therefore, Apple had higher total revenue in its latest fiscal year. 
+aapl_vs_xom_revenue run 2  FAIL  (missing expected '416,161')
+I can't find this in the provided filings.
 
-Apple total revenue: $416,161 million [2][3].
-ExxonMobil total revenue: $349,585 million [7].
-
-aapl_vs_xom_revenue run 2  FAIL  (missing expected '332,238')
-ExxonMobil had higher total revenue in its latest fiscal year. ExxonMobil's total consolidated revenues and other income was 349,585 million dollars [7], while Apple's total net sales was 416,161 million dollars [2][3] (Note: Apple's total net sales are lower than ExxonMobil's total consolidated revenues and other income).
-
-aapl_vs_xom_revenue run 3  FAIL  (missing expected '332,238')
-ExxonMobil had higher total revenue in its latest fiscal year. ExxonMobil's total consolidated revenues and other income was $349,585 million [7], while Apple's total net sales was $416,161 million [2][3].
+aapl_vs_xom_revenue run 3  FAIL  (missing expected '416,161')
+I can't find this in the provided filings.

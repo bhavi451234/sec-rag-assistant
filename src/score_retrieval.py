@@ -1,11 +1,12 @@
 """Retrieval score: how often does a retrieved chunk contain the evidence phrase?"""
 
 import numpy as np
-from sentence_transformers import SentenceTransformer
+from sentence_transformers import CrossEncoder, SentenceTransformer
 
-from src.answer import retrieve
+from src.answer import RERANKER_NAME, retrieve
 from src.check_eval_set import load_eval
 from src.search import CHUNKS_PATH, MODEL_NAME, VECTORS_PATH, build_index, load_chunks
+
 
 def hit_rank(entry, results):
     """Return the worst per-company position of the evidence, or None if any company's evidence is missing."""
@@ -25,8 +26,10 @@ def hit_rank(entry, results):
         worst = max(worst, rank)
     return worst
 
+
 def main():
     embedder = SentenceTransformer(MODEL_NAME)
+    reranker = CrossEncoder(RERANKER_NAME)
     chunks = load_chunks(CHUNKS_PATH)
     index = build_index(np.load(VECTORS_PATH))
 
@@ -34,9 +37,9 @@ def main():
     hits5 = 0
     hits8 = 0
     for entry in entries:
-        results = retrieve(entry["question"], embedder, index, chunks, k=8)
+        results = retrieve(entry["question"], embedder, index, chunks, k=8, reranker=reranker)
         rank = hit_rank(entry, results)
-        print(f"{entry['id']:20} evidence found at position: {rank}")
+        print(f"{entry['id']:28} evidence found at position: {rank}")
         if rank is not None:
             hits8 += 1
             if rank <= 5:
@@ -44,6 +47,7 @@ def main():
 
     total = len(entries)
     print(f"\nhit@5: {hits5}/{total} | hit@8: {hits8}/{total}")
+
 
 if __name__ == "__main__":
     main()
