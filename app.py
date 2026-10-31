@@ -81,7 +81,7 @@ if (st.button("Ask") or st.session_state.pop("run_now", False)) and question.str
         print("answer() failed:", repr(error))
         st.error("Something went wrong while answering. Please try again.")
         st.stop()
-    st.write(result["answer"].replace("$", "\\$"))
+        st.write(result["answer"].replace("$", "\\$").replace("\n", "  \n"))
     cited = {int(n) for n in re.findall(r"\[(\d+)\]", result["answer"])}
     if cited:
         st.subheader("Sources")

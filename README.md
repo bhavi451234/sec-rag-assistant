@@ -2,6 +2,8 @@
 
 Ask questions about the latest annual reports (10-K filings) of seven companies and get answers with citations. Every answer shows the exact passages it came from, with a link to the filing on SEC.gov.
 
+   ![The app answering a question, with the cited source open](docs/app.png)
+
 **Companies:** Apple, Microsoft, Tesla, Snap, JPMorgan Chase, ExxonMobil, Johnson & Johnson.
 
 This is a learning project. It is not investment advice, and answers can be wrong. Check the cited passage.
