@@ -1,35 +1,71 @@
-aapl_vs_msft_sales run 1  PASS  (ok)
-Microsoft reported higher total revenue in its latest fiscal year [11][15][22]. Microsoft's total revenue for the fiscal year ended June 30, 2026, was $331,839 million [15][22], and Apple's total net sales for the fiscal year ended September 27, 2025, were $416,161 million [11].
+ho_tsla_net_income run 1  PASS  (ok)
+Tesla's net income attributable to common stockholders in 2025 was $3,794 million [1][3][6].
 
-aapl_vs_msft_sales run 2  PASS  (ok)
-Microsoft reported higher total revenue in its latest fiscal year [11][15][22]. Microsoft's total revenue for the fiscal year ended June 30, 2026, was $331,839 million [15][22], and Apple's total net sales for the fiscal year ended September 27, 2025, were $416,161 million [11] (alternatively, Apple's narrower segment and geographic breakdown shows U.S. net sales of $151,790 million, China net sales of $64,377 million, and other countries net sales of $199,994 million) [11].
+ho_tsla_net_income run 2  PASS  (ok)
+In 2025, Tesla's net income attributable to common stockholders was $3,794 million [1].
 
-aapl_vs_msft_sales run 3  PASS  (ok)
-Microsoft reported higher total revenue in its latest fiscal year [11][22]. Microsoft's total revenue for the fiscal year ended June 30, 2026, was $331,839 million [22]. Apple's total net sales for the fiscal year ended September 27, 2025, were $416,161 million [11], but Microsoft's total revenue was $331,839 million [22].
+ho_tsla_net_income run 3  PASS  (ok)
+Tesla's net income attributable to common stockholders in 2025 was $3,794 million [1].
 
-tsla_vs_jpm_revenue run 1  PASS  (ok)
-JPMorgan Chase's total net revenue is larger [1][13]. For the year ended December 31, 2025, Tesla's total revenues were $94,827 million [1], and JPMorgan Chase's total net revenue was $182,447 million [13].
+ho_snap_dau run 1  PASS  (ok)
+Snap had 474 million daily active users on average in the fourth quarter of 2025 [2][6].
 
-tsla_vs_jpm_revenue run 2  PASS  (ok)
-JPMorgan Chase's total net revenue is larger [1][13]. For the year ended December 31, 2025, Tesla's total revenues were $94,827 million, while JPMorgan Chase's total net revenue was $182,447 million [1][15].
+ho_snap_dau run 2  PASS  (ok)
+Snap had 474 million daily active users on average in the fourth quarter of 2025 [2][6].
 
-tsla_vs_jpm_revenue run 3  PASS  (ok)
-JPMorgan Chase's total net revenue is larger [1][13]. For the year ended December 31, 2025, Tesla's total revenues were $94,827 million, and JPMorgan Chase's total net revenue was $182,447 million [1][15].
+ho_snap_dau run 3  PASS  (ok)
+Snap had 474 million average Daily Active Users (DAUs) in the fourth quarter of 2025 [2][6].
 
-msft_vs_tsla_revenue run 1  PASS  (ok)
-Microsoft had higher total revenue in its latest fiscal year. For their respective latest fiscal years, Microsoft reported total revenue of $331,839 million (for the year ended June 30, 2026) [3][10], and Tesla reported total revenue of $94,827 million (for the year ended December 31, 2025) [14][20].
+ho_aapl_net_income run 1  PASS  (ok)
+Apple's net income in fiscal 2025 was $112,010 million [1].
 
-msft_vs_tsla_revenue run 2  PASS  (ok)
-Microsoft had higher total revenue in its latest fiscal year. Microsoft's total revenue for the fiscal year ended June 30, 2026, was $331,839 million, while Tesla's total revenue for the fiscal year ended December 31, 2025, was $94,827 million [3][14].
+ho_aapl_net_income run 2  PASS  (ok)
+Apple's net income in fiscal 2025 was $112,010 million [1].
 
-msft_vs_tsla_revenue run 3  PASS  (ok)
-Microsoft had higher total revenue in its latest fiscal year. For their respective latest fiscal years, Microsoft reported total revenue of $331,839 million (for the year ended June 30, 2026) [3][10], and Tesla reported total revenue of $94,827 million (for the year ended December 31, 2025) [14][20].
+ho_aapl_net_income run 3  PASS  (ok)
+Apple's net income in fiscal 2025 was $112,010 million [1].
 
-aapl_vs_xom_revenue run 1  PASS  (ok)
-ExxonMobil had higher total revenue in its latest fiscal year. ExxonMobil's total consolidated revenues and other income was $332,238 million [17], while Apple's total net sales was $416,161 million [9].
+ho_msft_net_income run 1  PASS  (ok)
+Microsoft's net income in fiscal year 2026 was $133,749 million [5].
 
-aapl_vs_xom_revenue run 2  PASS  (ok)
-ExxonMobil had higher total revenue in its latest fiscal year [9][18]. ExxonMobil's total consolidated revenues and other income was $332,238 million [18], while Apple's total net sales was $416,161 million [9]. (Note: Apple's total net sales is a narrower figure than ExxonMobil's total consolidated revenues and other income.)
+ho_msft_net_income run 2  PASS  (ok)
+Microsoft's net income in fiscal 2026 was $133,749 million [5].
 
-aapl_vs_xom_revenue run 3  PASS  (ok)
-ExxonMobil had higher total revenue in its latest fiscal year, with total consolidated revenues and other income of $332,238 million [17], compared to Apple's total net sales of $416,161 million [9]. (Note: Apple's net sales figure is higher, but ExxonMobil's total revenue/consolidated revenues and other income is higher at $332,238 million [17] compared to Apple's revenue of $416,161 million [9] based on the broader revenue definitions reported; however, strictly comparing the raw figures provided for total revenue/sales, Apple's total net sales are $416,161 million [9] and ExxonMobil's total consolidated revenues and other income are $332,238 million [17]).
+ho_msft_net_income run 3  PASS  (ok)
+Microsoft's net income in fiscal 2026 was $133,749 million [5].
+
+ho_aapl_vs_msft_income run 1  PASS  (ok)
+In their latest fiscal years, Apple's net income was $112,010 million for the year ended September 27, 2025 [1], and Microsoft's net income was $133,749 million for the year ended June 30, 2026 [14].
+
+ho_aapl_vs_msft_income run 2  PASS  (ok)
+In their latest fiscal years, Apple reported a net income of $112,010 million for the year ended September 27, 2025 [1], and Microsoft reported a net income of $133,749 million for the year ended June 30, 2026 [14].
+
+ho_aapl_vs_msft_income run 3  PASS  (ok)
+In the latest fiscal years reported, Apple's net income was $112,010 million for the fiscal year ended September 27, 2025 [1], and Microsoft's net income was $133,749 million for the fiscal year ended June 30, 2026 [14].
+
+ho_tsla_vs_msft_income run 1  FAIL  (missing expected '3,794')
+In their latest fiscal years, Tesla's net income was $3,855 million [1] and Microsoft's net income was $133,749 million [13].
+
+ho_tsla_vs_msft_income run 2  FAIL  (missing expected '3,794')
+In their latest fiscal years, Tesla's net income was $3,855 million (for the year ended December 31, 2025) [1], and Microsoft's net income was $133,749 million (for the year ended June 30, 2026) [13].
+
+ho_tsla_vs_msft_income run 3  FAIL  (missing expected '3,794')
+Tesla's net income in its latest fiscal year (ended December 31, 2025) was $3,855 million [1]. Microsoft's net income in its latest fiscal year (ended June 30, 2026) was $133,749 million [13].
+
+ho_snap_auditor run 1  PASS  (ok)
+Ernst & Young, LLP [1]
+
+ho_snap_auditor run 2  PASS  (ok)
+Ernst & Young, LLP [1]
+
+ho_snap_auditor run 3  PASS  (ok)
+Ernst & Young, LLP [1]
+
+ho_aapl_2027_income run 1  PASS  (ok)
+I can't find this in the provided filings.
+
+ho_aapl_2027_income run 2  PASS  (ok)
+I can't find this in the provided filings.
+
+ho_aapl_2027_income run 3  PASS  (ok)
+I can't find this in the provided filings.
